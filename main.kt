@@ -7,7 +7,7 @@ class EncryptionKey(phrase : String) {
 
 	init {
 		pLen = phrase.length
-		var mid = (pLen / 2) - 1
+		val mid = (pLen / 2) - 1
 		fChar = (phrase[0].toInt() - 32)
 		mChar = (phrase[mid].toInt() - 30)
 		lChar = (phrase[pLen-1].toInt() - 22)
@@ -16,7 +16,9 @@ class EncryptionKey(phrase : String) {
 			odd = 4
 	}
 
-	// Note for later: add chars to message
+	// Creates an encryption key or array by rearranging
+	// characters based on the variables created in init 
+	// from the passphrase
 	fun getEncryptionKey() : Array<Int> {
 		var key = emptyArray<Int>()
 
@@ -70,7 +72,6 @@ fun pop(oldArray: Array<Int>, index: Int): Array<Int> {
 }
 
 // Encrypts the message given the key
-// Then displays the encrypted message
 fun encrypt(key: Array<Int>, message: String) : String{
 	var encryptedMessage = ""
 	for (i in 0..message.length-1) {
@@ -82,7 +83,7 @@ fun encrypt(key: Array<Int>, message: String) : String{
 	return encryptedMessage
 }
 
-// Decrypts and displays the message
+// Decrypts by using the encryption key
 fun decrypt(key: Array<Int>, encrMess: String) : String {
 	var decryptedMessage = ""
 	for (i in encrMess) {
