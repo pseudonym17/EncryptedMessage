@@ -5,9 +5,8 @@ This program allows a message from a user to be encrypted or decrypted based on 
 The purpose of this software is have password-based encryption and decryption ready to be implemented into an actual messenger app. My other intent was to become familiar with the Kotlin language as well as encryption.
 
 Through this process I learned about encryption and password-based encryption. I learned the Kotlin language, particularly how to work with arrays in Kotlin, how to take and use user input, and how to implement functions and classes.
-{Link to be provided soon.  It should be a 4-5 minute demo of the software running and a walkthrough of the code.  Focus should be on sharing what you learned about the language syntax.}
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Encrypted Message Program Demo Video](https://youtu.be/6GKM7fn0xUA)
 
 # Development Environment
 
